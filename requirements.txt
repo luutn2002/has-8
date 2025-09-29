@@ -1,0 +1,2 @@
+spikingjelly==0.0.0.0.14
+pillow==10.3.0
