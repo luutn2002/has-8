@@ -1,5 +1,5 @@
 # has-8
-Hybrid Layer-Wise ANN-SNN With Surrogate Spike Encoding-Decoding Structure
+[Hybrid Layer-Wise ANN-SNN With Surrogate Spike Encoding-Decoding Structure](https://arxiv.org/abs/2509.24411)
 
 ## Quickstart
 
