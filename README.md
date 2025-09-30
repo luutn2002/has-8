@@ -141,6 +141,7 @@ Paper is under review. Temporarily please cite as:
 @article{luu2025hybrid,
   title={Hybrid Layer-Wise ANN-SNN With Surrogate Spike Encoding-Decoding Structure},
   author={Luu, Nhan T and Luu, Duong T and Pham, Nam N and Truong, Thang C},
+  journal={arXiv preprint arXiv:2509.24411},
   year={2025}
 }
 ```
