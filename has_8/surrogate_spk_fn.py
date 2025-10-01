@@ -9,12 +9,15 @@ def rate_decode(x: torch.Tensor):
     return x.mean(0)
 
 @torch.jit.script
-def bpd_decode(x: torch.Tensor):
+def bpd_decode(x: torch.Tensor,
+               weights: torch.Tensor = torch.tensor([2 ** i for i in reversed(range(8))])) -> torch.Tensor:
     device = x.device
     dtype = x.dtype
-    weights = torch.tensor([2 ** i for i in reversed(range(8))], device=device, dtype=dtype)
-    shape = [8] + [1] * (x.ndim - 1)
-    weights = weights.view(*shape)
+    weights = weights.to(device).to(dtype)
+    shape = [8]
+    for _ in range(x.ndim - 1):
+        shape.append(1)
+    weights = weights.view(shape)
     decoded = (x * weights).sum(dim=0)
     return decoded / 255.0
 

@@ -20,7 +20,7 @@ class SpikingEncodeDecodeBase(nn.Module):
     
     def _spiking_decode(self, 
                        x: torch.Tensor) -> torch.Tensor:
-        self.decode_fn(x)
+        return self.decode_fn(x)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         x = self._spiking_encode(x)
