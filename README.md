@@ -7,7 +7,7 @@ This is a quickstart guide on how to use our model as a package
 
 ### Step 1: Environment setup and repo download
 
-To setup the environment testing with this encoder, you will need Pytorch, Pennylane and SpikingJelly. We suggest using conda environment with:
+To setup the environment testing with this encoder, you will need Pytorch and SpikingJelly. We suggest using conda environment with:
 
 ```bash
 $ conda create -n env python=3.12.2
